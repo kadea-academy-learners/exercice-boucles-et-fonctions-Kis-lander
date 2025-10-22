@@ -18,5 +18,10 @@ function multiplication(a, b) {
   return a * b;
 }
 
+console.log(multiplication(3, 4)); // 12
+console.log(multiplication(3));    // undefined
+console.log(multiplication('3', 4)); // undefined
+console.log(multiplication(NaN, 2)); // undefined
+
 // Ne pas modifier la ligne ci-dessous
 module.exports = { multiplication }
