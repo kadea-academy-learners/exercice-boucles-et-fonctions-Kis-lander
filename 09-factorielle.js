@@ -14,7 +14,7 @@ function factorielle(n) {
   // Placeholder neutre : retourne 0 pour indiquer non-implémentation
   
   // Vérifie que n est un nombre entier non négatif
-  if (typeof n !== "number" || n < 0 || !Number.isInteger(n)) {
+  if (typeof n !== "number" || n < 0) {
     return 0;
   } else if (n === 0) {
     return 1;
@@ -27,7 +27,7 @@ function factorielle(n) {
   return resultat;
 }
 // Exemple d'utilisation :
-console.log(factorielle(5));
+console.log(factorielle(0));
 
 // Ne pas modifier la ligne ci-dessous
 module.exports = { factorielle }
