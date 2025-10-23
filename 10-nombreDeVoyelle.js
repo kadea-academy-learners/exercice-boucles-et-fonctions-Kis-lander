@@ -9,38 +9,25 @@
   Placeholder : levée d'erreur pour indiquer que l'exercice doit être implémenté.
 */
 function nombreDeVoyelles(phrase) {
-  // Exercice non implémenté : doit compter les voyelles
-  // Placeholder neutre : retourne 0 pour indiquer non-implémentation
-  // Vérifie que l'entrée est une chaîne
-  if (typeof phrase !== "string") {
-    return 0;
-  }
-
-  let n = 0;
-  // Convertir la phrase en minuscules pour ignorer la casse
+  let nombreDeVoyelle = 0;
   phrase = phrase.toLowerCase();
-
   for (let i = 0; i < phrase.length; i++) {
-    if (
-      phrase[i] === "a" ||
-      phrase[i] === "e" ||
-      phrase[i] === "i" ||
-      phrase[i] === "o" ||
-      phrase[i] === "u" ||
-      phrase[i] === "y"
-    ) {
-      n++;
+    if (phrase[i] == "a") {
+      nombreDeVoyelle = nombreDeVoyelle + 1;
+    } else if (phrase[i] == "e") {
+      nombreDeVoyelle = nombreDeVoyelle + 1;
+    } else if (phrase[i] == "i") {
+      nombreDeVoyelle = nombreDeVoyelle + 1;
+    } else if (phrase[i] == "o") {
+      nombreDeVoyelle =nombreDeVoyelle + 1;
+    } else if (phrase[i] == "u") {
+      nombreDeVoyelle = nombreDeVoyelle + 1;
+    } else if (phrase[i] == "y") {
+      nombreDeVoyelle = nombreDeVoyelle + 1;
     }
   }
-
-  return n;
+  return nombreDeVoyelle;
 }
-
-// Exemple d'utilisation :
-console.log(nombreDeVoyelles("kadea"));
-console.log(nombreDeVoyelles("Bonjour")); 
-console.log(nombreDeVoyelles("123"));
-console.log(nombreDeVoyelles("KHB"));
-
+console.log(nombreDeVoyelles("Anticonstiutitionnelle"));
 // Ne pas modifier la ligne ci-dessous
 module.exports = { nombreDeVoyelles }
