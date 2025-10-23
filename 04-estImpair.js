@@ -16,11 +16,11 @@ function estImpair(n) {
     return null;
   } else if (n % 2 !== 0) {
     return true; // Si n est impair
-  } else { 
+  } else if (n % 2 === 0) { 
     return false; // Sinon, n est pair
   }
 }
-console.log(estImpair(4));          
+console.log(estImpair("a"));          
 
 // Ne pas modifier la ligne ci-dessous
 module.exports = { estImpair };
