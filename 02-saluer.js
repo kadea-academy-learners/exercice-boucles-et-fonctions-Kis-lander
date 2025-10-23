@@ -17,7 +17,7 @@ function saluer(nom) {
   }
 }
 
-saluer();
+saluer("Abel");
 
 // Ne pas modifier la ligne ci-dessous
 module.exports = { saluer }
