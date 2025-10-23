@@ -16,9 +16,7 @@ function factorielle(n) {
   // Vérifie que n est un nombre entier non négatif
   if (typeof n !== "number" || n < 0 || !Number.isInteger(n)) {
     return 0;
-  }
-  // Cas de base : 0! = 1
-  if (n === 0) {
+  } else if (n === 0) {
     return 1;
   }
   // Calcul itératif de la factorielle
@@ -30,8 +28,6 @@ function factorielle(n) {
 }
 // Exemple d'utilisation :
 console.log(factorielle(5));
-console.log(factorielle(-2));
-console.log(factorielle("test"));
 
 // Ne pas modifier la ligne ci-dessous
 module.exports = { factorielle }
