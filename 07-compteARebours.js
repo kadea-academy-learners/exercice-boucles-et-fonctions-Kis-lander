@@ -11,7 +11,7 @@
     sans lever d'exception. L'étudiant doit remplacer la fonction par son implémentation.
   */
   function compteARebours() {
-    // Placeholder neutre : ne fait rien
+    for (let i = 10; i >= 1; i--) {}
   }
 
   // Ne pas modifier la ligne ci-dessous
